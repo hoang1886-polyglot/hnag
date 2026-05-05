@@ -5,6 +5,25 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 <title>Hôm nay ăn gì nhỉ? — Recipe Manager</title>
 <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,700;1,400;1,700&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+
+  <!-- Firebase -->
+  <script type="module">
+    import { initializeApp } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-app.js";
+    import { getAnalytics } from "https://www.gstatic.com/firebasejs/12.12.1/firebase-analytics.js";
+
+    const firebaseConfig = {
+      apiKey: "AIzaSyAycG955ijRjWlBrjQK1z2KQ1FpsXPArkE",
+      authDomain: "hnag-32be4.firebaseapp.com",
+      projectId: "hnag-32be4",
+      storageBucket: "hnag-32be4.firebasestorage.app",
+      messagingSenderId: "1093641923263",
+      appId: "1:1093641923263:web:618e3701260144b6a6340a",
+      measurementId: "G-BBZ20D6NFF"
+    };
+
+    const app = initializeApp(firebaseConfig);
+    const analytics = getAnalytics(app);
+  </script>
 <style>
   :root {
     --beige: #F6F1E9;
